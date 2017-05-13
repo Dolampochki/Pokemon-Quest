@@ -1,0 +1,277 @@
+body {
+  font-family: 'Rubik', sans-serif;
+  margin: 0;
+  padding: 0;
+  direction: rtl;
+  color: #1f3e44;
+}
+
+body, html {
+  width: 100%;
+  height: 100%;
+    padding: 0;
+    margin:  0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4 {
+  padding: 0;
+  margin:  0;
+  font-weight: 100;
+}
+
+h2 {
+  font-size: 60px;
+}
+
+p {
+  color: #4b676b;
+  font-size: 36px;
+  font-weight: 100;
+}
+
+label {
+  font-size: 36px;
+  font-weight: 100;
+}
+
+section {
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: relative;
+}
+
+.block {
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	background-color: #fff;
+	border: solid 2px #437b70;
+  padding: 30px;
+}
+
+.hide {
+  display: none;
+}
+
+a {
+  cursor: pointer;
+}
+
+.button {
+	height: 88px;
+	-webkit-border-radius: 44px;
+	-moz-border-radius: 44px;
+	border-radius: 44px;
+	background-color: #24ccaa;
+	background-image: -webkit-linear-gradient(left, #a5dd96, #42cea9);
+	background-image: -moz-linear-gradient(left, #a5dd96, #42cea9);
+	background-image: -o-linear-gradient(left, #a5dd96, #42cea9);
+	background-image: -ms-linear-gradient(left, #a5dd96, #42cea9);
+	background-image: linear-gradient(to right, #a5dd96, #42cea9);
+  display: inline-block;
+  color: #fff;
+  font-size: 36px;
+  font-weight: 100;
+  text-align: center;
+  padding: 0 50px;
+  line-height: 86px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+.button:hover {
+  background-color: #1f3e44;
+  background-image: none;
+}
+
+.intro { background-color: #020202; background-image: url('../img/intro_bg.png'); }
+.collection { background-color: #61b586; background-image: url('../img/wrong_answer_bg.png'); }
+.question { background-color: #437a70; background-image: url('../img/question_bg.png'); }
+.right_answer { background-color: #fff; background-image: url('../img/right_answer_bg.png'); }
+.wrong_answer { background-color: #61b586; background-image: url('../img/wrong_answer_bg.png'); }
+
+.intro a {
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  display: block;
+}
+
+.intro h1 {
+  position: absolute;
+  left: 0;
+  bottom: 130px;
+  width: 100%;
+  color: #48a297;
+  font-size: 100px;
+}
+
+.intro h2 {
+  position: absolute;
+  left: 0;
+  bottom: 50px;
+  width: 100%;
+  color: #f8cd1c;
+  font-size: 60px;
+}
+
+.collection {
+  padding-top: 3vh;
+}
+
+.collection .block {
+  width: 96%;
+  height: 94vh;
+  padding: 30px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.collection h2 {
+  color: #1f3e44;
+  font-size: 60px;
+  border-bottom: 3px solid #1f3e44;
+  padding: 0 40px 10px 40px;
+  display: inline-block;
+  text-align: center;
+}
+
+.collection ul {
+  padding: 0;
+  margin: 60px 0 60px 0;
+  list-style: none;
+}
+
+.collection ul li {
+  padding: 0;
+  margin: 0 0 60px 0;
+  width: 170px;
+  height: 260px;
+  float: left;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.collection ul li:nth-child(1).innactive { background-image: url('../img/pokemon_innactive_1.png'); }
+.collection ul li:nth-child(2).innactive { background-image: url('../img/pokemon_innactive_2.png'); }
+.collection ul li:nth-child(3).innactive { background-image: url('../img/pokemon_innactive_3.png'); }
+.collection ul li:nth-child(4).innactive { background-image: url('../img/pokemon_innactive_4.png'); }
+.collection ul li:nth-child(5).innactive { background-image: url('../img/pokemon_innactive_5.png'); }
+.collection ul li:nth-child(6).innactive { background-image: url('../img/pokemon_innactive_6.png'); }
+.collection ul li:nth-child(7).innactive { background-image: url('../img/pokemon_innactive_7.png'); }
+.collection ul li:nth-child(8).innactive { background-image: url('../img/pokemon_innactive_8.png'); }
+.collection ul li:nth-child(9).innactive { background-image: url('../img/pokemon_innactive_9.png'); }
+
+.collection ul li:nth-child(1).active { background-image: url('../img/pokemon_active_1.png'); }
+.collection ul li:nth-child(2).active { background-image: url('../img/pokemon_active_2.png'); }
+.collection ul li:nth-child(3).active { background-image: url('../img/pokemon_active_3.png'); }
+.collection ul li:nth-child(4).active { background-image: url('../img/pokemon_active_4.png'); }
+.collection ul li:nth-child(5).active { background-image: url('../img/pokemon_active_5.png'); }
+.collection ul li:nth-child(6).active { background-image: url('../img/pokemon_active_6.png'); }
+.collection ul li:nth-child(7).active { background-image: url('../img/pokemon_active_7.png'); }
+.collection ul li:nth-child(8).active { background-image: url('../img/pokemon_active_8.png'); }
+.collection ul li:nth-child(9).active { background-image: url('../img/pokemon_active_9.png'); }
+
+.collection p.description {
+  clear: both;
+  margin: 0 auto 60px auto;
+  padding: 0 20%;
+  display: inline-block;
+}
+
+.content {
+  width: 750px;
+  margin-right: 180px;
+  text-align: center;
+  position: relative;
+  height: 100vh;
+}
+
+.question h2 {
+  color: #fff;
+  padding: 40px 0;
+}
+
+.question p {
+  padding: 0;
+  margin: 0;
+  text-align: right;
+}
+
+.question form {
+  position: absolute;
+  bottom: 100px;
+  right: 135px;
+  width: 480px;
+}
+
+.question form label {
+  display: block;
+  color: #fff;
+}
+
+.question input.question_value {
+  width: 100%;
+	height: 90px;
+  margin-top: 30px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	background-color: #fff;
+	border: solid 6px #24ccaa;
+  direction: ltr;
+  padding: 5px 20px;
+  color: #1f3e44;
+  font-size: 30px;
+  outline-color: transparent;
+  outline-style: none;
+}
+
+.question form input.button {
+  display: block;
+  width: 100%;
+  margin-top: 30px;
+}
+
+.right_answer h1 {
+  color: #fac538;
+  font-size: 120px;
+  font-weight: 900;
+  padding: 300px 0 100px 0;
+}
+
+.right_answer h2 {
+  position: absolute;
+  left: 300px;
+  bottom: 40px;
+}
+
+.wrong_answer {
+  text-align: center;
+}
+
+.wrong_answer h1 {
+  color: #fff;
+  font-size: 120px;
+  font-weight: 100;
+  padding: 300px 0 100px 0;
+}
+
+.find .content {
+  position: absolute;
+  left: 0;
+  bottom: 100px;
+  width: 100%;
+  text-align: center;
+  height: 100px;
+}
+
+.find { background-image: url('../img/level_1.png');}
